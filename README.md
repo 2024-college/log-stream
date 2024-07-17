@@ -46,9 +46,18 @@ services:
 
 ### 로그 모니터링
 ```shell
-# 로그 생성 테스트
-curl -X GET http://localhost:8081/test/hello\?name\=john
-
 # 로그 모니터링
 http://localhost:8080/stream.html
 ```
+![img.png](img.png)
+### 로그 생성 테스트
+```shell
+# info 로그
+curl -X GET http://localhost:8081/test/hello\?name\=tom
+
+## error 로그
+curl -X GET http://localhost:8081/test/hello\?name\=john
+
+
+```
+
