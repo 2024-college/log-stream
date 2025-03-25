@@ -53,10 +53,10 @@ http://localhost:8080/stream.html
 ### 로그 생성 테스트
 ```shell
 # info 로그
-curl -X GET http://localhost:8081/test/hello\?name\=tom
+curl -X GET http://localhost:8081/test/info
 
 ## error 로그
-curl -X GET http://localhost:8081/test/hello\?name\=john
+curl -X GET http://localhost:8081/test/error
 
 
 ```

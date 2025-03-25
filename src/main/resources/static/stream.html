@@ -36,7 +36,7 @@
 <div id="logs"></div>
 
 <script>
-    var socket = new WebSocket("ws://localhost:8080/logs");
+    var socket = new WebSocket("wss://skcc06919-kafka-edu-pod-testp8080nsk-edu.remote.ags-rde.skamdp.org/logs");
 
     socket.onmessage = function(event) {
         var logDiv = document.getElementById("logs");
