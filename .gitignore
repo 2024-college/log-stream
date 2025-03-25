@@ -2,3 +2,6 @@
 /gradlew.bat
 /gradlew
 /log-stream.eml
+.gradle
+*.class
+build
