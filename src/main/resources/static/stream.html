@@ -36,7 +36,12 @@
 <div id="logs"></div>
 
 <script>
-    var socket = new WebSocket("ws://localhost:8082/logs");
+    // 로컬 개발 환경에서는 localhost:8082, 원격 환경에서는 원격 URL 사용
+    var wsUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? "ws://localhost:8082/logs"
+        : "wss://skcc06919-kafka-edu-pod-testp8080nsk-edu.remote.ags-rde.skamdp.org/logs";
+    
+    var socket = new WebSocket(wsUrl);
 
     socket.onmessage = function(event) {
         var logDiv = document.getElementById("logs");

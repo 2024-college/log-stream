@@ -1,7 +1,10 @@
-/gradle/
-/gradlew.bat
-/gradlew
 /log-stream.eml
 .gradle
 *.class
 build
+/.gradle
+/build
+.classpath
+.project
+/.idea
+/**/*.eml

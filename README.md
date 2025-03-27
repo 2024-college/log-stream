@@ -46,12 +46,22 @@ services:
 
 ### 로그 모니터링
 ```shell
-# 로그 생성 테스트
-curl -X GET http://localhost:8081/test/info
-curl -X GET http://localhost:8081/test/debug
-curl -X GET http://localhost:8081/test/error
-curl -X GET http://localhost:8081/test/warn
-
 # 로그 모니터링
 http://localhost:8082/stream.html
+```
+![img.png](img.png)
+
+### 로그 생성 테스트
+```shell
+# info 로그
+curl -X GET http://localhost:8081/test/info
+
+# debug 로그
+curl -X GET http://localhost:8081/test/debug
+
+# error 로그
+curl -X GET http://localhost:8081/test/error
+
+# warn 로그
+curl -X GET http://localhost:8081/test/warn
 ```
